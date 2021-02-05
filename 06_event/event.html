@@ -1,0 +1,203 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>cinecube_event</title>
+<link href="style.css" rel="stylesheet">
+<!--jquery라이브러리-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<!--custom js-->
+<script src="custom.js" type="text/javascript"></script>
+</head>
+
+<body>
+	<header>
+        
+        <div class="wrap">
+            <div class="logo">
+                <a href="../01_main/index.html"><img src="img/1.png" alt="logo"></a>
+            </div>
+        	
+            <ul class="gnb">
+                <li><a href="#">영화</a>
+					<ul class="sub">
+                    	<li><a href="../02_movie/movie.html">현재상영작</a></li>
+                        <li><a href="#">상영예정작</a></li>
+                        <li><a href="#">지난상영작</a></li>
+                        <li><a href="#">씨네큐브 수입 배급작</a></li>
+                        <li><a href="#">기획전</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">예매</a>
+					<ul class="sub">
+                    	<li><a href="../03_ticket/ticket.html">예매</a></li>
+                        <li><a href="#">예매 확인/취소</a></li>
+                        <li><a href="#">상영시간표</a></li>
+                        <li><a href="#">비회원예매</a></li>
+                        <li><a href="#">비회원예매 확인/취소</a></li>
+                        <li><a href="#">예매 안내</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">뉴스</a>
+                	<ul class="sub">
+                    	<li><a href="../05_notice/notice.html">공지사항</a></li>
+                        <li><a href="#">뉴스레터</a></li>
+                        <li><a href="#">매거진</a></li>
+                            
+                    </ul>
+                </li>
+                <li><a href="#">이벤트</a>
+                	<ul class="sub">
+                    	<li><a href="event.html">진행중 이벤트</a></li>
+                        <li><a href="#">당첨자 발표</a></li>
+                        <li><a href="#">종료 이벤트</a></li>
+                        <li><a href="#">영화 토크</a></li>
+                            
+                    </ul>
+                </li>
+                <li><a href="#">씨네큐브</a>
+                	<ul class="sub">
+                    	<li><a href="../04_intro/intro.html">씨네큐브</a></li>
+                        <li><a href="#">시설안내</a></li>
+                        <li><a href="#">관람안내</a></li>
+                        <li><a href="#">위치안내</a></li>
+                        <li><a href="#">주차안내</a></li>
+                    
+                    </ul>
+                </li>
+            </ul>
+            <ul class="icon">
+                <li class="searching"><a href="#"><img src="img/28.png"></a></li>
+                <li><a href="#"><img src="img/29.png"></a></li>
+                <li class="cube"><a href="#"><img src="img/30.png"></a></li>
+        	</ul>
+            <div class="aside_menu">
+            	<button>로그인을 해주세요.</button>
+             
+                <div class="x_icon">
+                	<img src="img/80.png" alt="x">
+                </div>
+                <div class="contents">
+                	<div class="co1">
+                    	<a href="#"><p>예매<br>확인/취소</p></a>
+                    </div>
+                    <div class="co2">
+                    	<a href="#"><p>1:1문의</p></a>
+                    </div>
+                    <div class="co3">
+                    	<a href="#"><p>멤버십<br>가이드</p></a>
+                    </div>
+                    <div class="co4">
+                    	<a href="#"><p>고객문의</p></a>
+                    </div>
+                    
+                </div>
+                <div class="ad_b">
+                	<img src="img/78.png">
+                </div>
+            </div><!--.aside_menu END-->
+			<div class="aside_search">
+            	<input type="search" id="search_box" placeholder="검색어를 입력하세요.">
+               	<div class="x_icon">
+                	<img src="img/80.png" alt="x">
+                </div> 
+                <div class="ad_b">
+                	<img src="img/79.png">
+                </div>
+            </div>
+      		
+        </div>
+        <div class="subBg"></div>
+     	
+
+    </header>
+	<section id="banner">    
+    	<div class="wrap">
+    		<ul class="slide">
+            	<li><a href="#"><img src="img/63.png"></a></li>
+                <li><a href="#"><img src="img/68.png"></a></li>
+                <li><a href="#"><img src="img/67.png"></a></li>
+            </ul>
+           	<div class="direct">
+            	<button class="left"><img src="img/4.png" alt="left"></button>
+                <button class="right"><img src="img/3.png" alt="right"></button>
+            </div>
+        </div>
+    </section>    
+    <section id="one">
+    	<div class="top">
+        	<img src="img/43.png">
+        </div>  
+    	<div class="wrap">
+        	<ul class="menu">
+        		<li><button class="btn" data-rel="all">전체</button></li>
+                <li><button class="btn" data-rel="event">이벤트</button></li>
+                <li><button class="btn" data-rel="show">상영회</button></li>
+            </ul>
+            <ul class="contents">
+            	<li class="first scale all event"><img src="img/64.png" alt="">
+                	<ul class="black">
+                    	<li>D-14</li>
+                        <li>[아녜스 바르다 특별전]예매 이벤트</li>
+                        <li>2020-04-24 ~ 2020-05-03 까지</li>
+                    </ul>
+                </li>
+                <li class="scale all show"><img src="img/64.png" alt="">
+                	<ul class="black">
+                    	<li>D-14</li>
+                        <li>[아녜스 바르다 특별전] 굿즈 상영회</li>
+                        <li>2020-04-24 ~ 2020-05-03 까지</li>
+                    </ul>
+                </li>
+                <li class="third scale all event"><img src="img/65.png" alt="">
+                	<ul class="black">
+                    	<li>D-14</li>
+                        <li>[애프터 웨딩 인 뉴욕] 예매 이벤트</li>
+                        <li>2020-04-24 ~ 2020-05-03 까지</li>
+                    </ul>
+                </li>
+                <li class="four scale all event"><img src="img/64.png" alt="">
+                	<ul class="black">
+                    	<li>D-14</li>
+                        <li>[아녜스 바르다 특별전]
+시그니처 뱃지 이벤트</li>
+                        <li>2020-04-24 ~ 2020-05-03 까지</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </section>
+    
+    <section id="ad">
+    	<a href="#"><img src="img/66.png"alt="bottom"></a>
+    </section>
+    
+    <footer>
+    	<div class="wrap">
+        	<div class="b_logo">
+            	<a href="../index.html"><img src="../06_event/img/25.png"></a>
+            </div>
+            <ul class="b_gnb">
+            	<li><a href="#">이용약관</a></li>
+                <li><a href="#">제휴문의</a></li>
+                <li><a href="#">고객문의</a></li>
+                <li><a href="#">사이트맵</a></li>
+                <li><a href="#">개인정보 취급방침</a></li>
+            </ul>
+            <div class="b_left">
+            	<p>서울시  종로구 신문로 1가 226<br>
+				흥국생명 빌딩 지하 2층<br>
+				씨네큐브 광화문</p>
+            </div>
+
+            
+            <div class="b_right">
+            <p>cineclub은 문화 컨텐츠 선두주자<br> 
+			   tcast가 운영하고 <br>
+			   흥국금융가족이 cineclub의 운영을 <br>
+			   지원하고 있습니다</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

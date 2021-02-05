@@ -1,0 +1,356 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>cinecube_ticket</title>
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+          integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+<link href="style.css" rel="stylesheet">
+
+<!--jquery라이브러리-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="jquery-ui.min.js"></script>
+
+
+
+</head>
+
+<body>
+	 <header>
+        
+        <div class="wrap">
+            <div class="logo">
+                <a href="../index.html"><img src="img/1.png" alt="logo"></a>
+            </div>
+        	
+            <ul class="gnb">
+                <li><a href="#">영화</a>
+					<ul class="sub">
+                    	<li><a href="../02_movie/movie.html">현재상영작</a></li>
+                        <li><a href="#">상영예정작</a></li>
+                        <li><a href="#">지난상영작</a></li>
+                        <li><a href="#">씨네큐브 수입 배급작</a></li>
+                        <li><a href="#">기획전</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">예매</a>
+					<ul class="sub">
+                    	<li><a href="../03_ticket/ticket.html">예매</a></li>
+                        <li><a href="#">예매 확인/취소</a></li>
+                        <li><a href="#">상영시간표</a></li>
+                        <li><a href="#">비회원예매</a></li>
+                        <li><a href="#">비회원예매 확인/취소</a></li>
+                        <li><a href="#">예매 안내</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">뉴스</a>
+                	<ul class="sub">
+                    	<li><a href="../05_notice/notice.html">공지사항</a></li>
+                        <li><a href="#">뉴스레터</a></li>
+                        <li><a href="#">매거진</a></li>
+                            
+                    </ul>
+                </li>
+                <li><a href="#">이벤트</a>
+                	<ul class="sub">
+                    	<li><a href="../06_event/event.html">진행중 이벤트</a></li>
+                        <li><a href="#">당첨자 발표</a></li>
+                        <li><a href="#">종료 이벤트</a></li>
+                        <li><a href="#">영화 토크</a></li>
+                            
+                    </ul>
+                </li>
+                <li><a href="#">씨네큐브</a>
+                	<ul class="sub">
+                    	<li><a href="../04_intro/intro.html">씨네큐브</a></li>
+                        <li><a href="#">시설안내</a></li>
+                        <li><a href="#">관람안내</a></li>
+                        <li><a href="#">위치안내</a></li>
+                        <li><a href="#">주차안내</a></li>
+                    
+                    </ul>
+                </li>
+            </ul>
+            <ul class="icon">
+                <li class="searching"><a href="#"><img src="img/28.png"></a></li>
+                <li><a href="#"><img src="img/29.png"></a></li>
+                <li class="cube"><a href="#"><img src="img/30.png"></a></li>
+        	</ul>
+            <div class="aside_menu">
+            	<button>로그인을 해주세요.</button>
+             
+                <div class="x_icon">
+                	<img src="img/80.png" alt="x">
+                </div>
+                <div class="contents">
+                	<div class="co1">
+                    	<a href="#"><p>예매<br>확인/취소</p></a>
+                    </div>
+                    <div class="co2">
+                    	<a href="#"><p>1:1문의</p></a>
+                    </div>
+                    <div class="co3">
+                    	<a href="#"><p>멤버십<br>가이드</p></a>
+                    </div>
+                    <div class="co4">
+                    	<a href="#"><p>고객문의</p></a>
+                    </div>
+                    
+                </div>
+                <div class="ad_b">
+                	<img src="img/78.png">
+                </div>
+            </div><!--.aside_menu END-->
+			<div class="aside_search">
+            	<input type="search" id="search_box" placeholder="검색어를 입력하세요.">
+               	<div class="x_icon">
+                	<img src="img/80.png" alt="x">
+                </div> 
+                <div class="ad_b">
+                	<img src="img/79.png">
+                </div>
+            </div>
+      		
+        </div>
+        <div class="subBg"></div>
+     	
+
+    </header>
+    <section id="one">
+    	<div class="wrap">
+    		<h2 id="choice">영화 선택</h2>
+            <h2>관람일 선택</h2>
+            
+            <div class="box1">
+            	<h3>전체영화</h3>
+				<div class="bar"></div> 
+                <table  borer="1" width="410px" height="450px">
+                    <tr>
+                        <td colspan="5">1</td>
+                        <td colspan="6"><img src="img/70.png" alt="all"></td> 
+                        <td colspan="6"><button id="bt" class="lala">라라걸</button></td>
+                         
+                    </tr>   
+                    
+                    <tr>
+                        <td colspan="5">2</td>
+                        <td colspan="6"><img src="img/71.png" alt="15"></td> 
+                        <td colspan="6"><button id="bt" class="ahbi">아비정전</button></td>
+                         
+                    </tr>   
+                    
+                    <tr>
+                        <td colspan="5">3</td>
+                        <td colspan="6"><img src="img/71.png" alt="15"></td> 
+                        <td colspan="6"><button id="bt" class="beach">아녜스 바르다의 해변</button></td>
+                         
+                    </tr>   
+                    
+                    <tr>
+                        <td colspan="5">4</td>
+                        <td colspan="6"><img src="img/69.png" alt="12"></td> 
+                        <td colspan="6"><button id="bt" class="me">이삭줍는 사람들과 나</button> </td>
+                         
+                    </tr>   
+                    
+                    <tr>
+                        <td colspan="5">5</td>
+                        <td colspan="6"><img src="img/71.png" alt="15"></td> 
+                        <td colspan="6"><button id="bt" class="roamer">방랑자</button></td>
+                         
+                    </tr>   
+                    
+                    <tr>
+                        <td colspan="5">6</td>
+                        <td colspan="6"><img src="img/71.png" alt="15"></td> 
+                        <td colspan="6"><button id="bt" class="jaco">낭트의 자코 </button></td>
+                         
+                    </tr>   
+                    
+                      
+            	</table>  
+              
+                   	
+            </div>
+            <div class="box2">
+                
+            	<div class="bar"></div> 
+                <p>영화를 선택해주세요.</p>
+                <div class="img">
+                	
+                    <div>
+                	<img id="lala"src="img/72.png">
+                    </div>
+                    <div>
+                    <img id="ahbi" src="img/76.png">
+                    </div>
+                    <div>
+                    <img id="roamer"src="img/74.png">
+                    </div>
+                    <div>
+                    <img id="jaco"src="img/75.png">
+                    </div>
+                    <div>
+                    <img id="me"src="img/73.png">
+                    </div>
+                    <div>
+                    <img id="beach"src="img/77.png">
+                    </div>
+                </div>
+                    
+            </div> 
+           
+            <div class="box3">
+            	
+                <div class="container">
+                    <div class="card">
+                        <h3 class="card-header" id="monthAndYear"></h3>
+                        <table class="table table-bordered table-responsive-sm" id="calendar">
+                            <thead>
+                            <tr>
+                                <th>일</th>
+                                <th>월</th>
+                                <th>화</th>
+                                <th>수</th>
+                                <th>목</th>
+                                <th>금</th>
+                                <th>토</th>
+                            </tr>
+                            </thead>
+                
+                            <tbody id="calendar-body">
+                
+                            </tbody>
+                        </table>
+                
+                        <div class="form-inline">
+                
+                            <button class="btn btn-outline-primary col-sm-6" id="previous" onclick="previous()">Previous</button>
+                
+                            <button class="btn btn-outline-primary col-sm-6" id="next" onclick="next()">Next</button>
+                        </div>
+                        <br/>
+                        <form class="form-inline">
+                            <label class="lead mr-2 ml-2" for="month">Jump To: </label>
+                            <select class="form-control col-sm-4" name="month" id="month" onchange="jump()">
+                                <option value=0>Jan</option>
+                                <option value=1>Feb</option>
+                                <option value=2>Mar</option>
+                                <option value=3>Apr</option>
+                                <option value=4>May</option>
+                                <option value=5>Jun</option>
+                                <option value=6>Jul</option>
+                                <option value=7>Aug</option>
+                                <option value=8>Sep</option>
+                                <option value=9>Oct</option>
+                                <option value=10>Nov</option>
+                                <option value=11>Dec</option>
+                            </select>
+                
+                
+                            <label for="year"></label><select class="form-control col-sm-4" name="year" id="year" onchange="jump()">
+                            <option value=1990>1990</option>
+                            <option value=1991>1991</option>
+                            <option value=1992>1992</option>
+                            <option value=1993>1993</option>
+                            <option value=1994>1994</option>
+                            <option value=1995>1995</option>
+                            <option value=1996>1996</option>
+                            <option value=1997>1997</option>
+                            <option value=1998>1998</option>
+                            <option value=1999>1999</option>
+                            <option value=2000>2000</option>
+                            <option value=2001>2001</option>
+                            <option value=2002>2002</option>
+                            <option value=2003>2003</option>
+                            <option value=2004>2004</option>
+                            <option value=2005>2005</option>
+                            <option value=2006>2006</option>
+                            <option value=2007>2007</option>
+                            <option value=2008>2008</option>
+                            <option value=2009>2009</option>
+                            <option value=2010>2010</option>
+                            <option value=2011>2011</option>
+                            <option value=2012>2012</option>
+                            <option value=2013>2013</option>
+                            <option value=2014>2014</option>
+                            <option value=2015>2015</option>
+                            <option value=2016>2016</option>
+                            <option value=2017>2017</option>
+                            <option value=2018>2018</option>
+                            <option value=2019>2019</option>
+                            <option value=2020>2020</option>
+                            <option value=2021>2021</option>
+                            <option value=2022>2022</option>
+                            <option value=2023>2023</option>
+                            <option value=2024>2024</option>
+                            <option value=2025>2025</option>
+                            <option value=2026>2026</option>
+                            <option value=2027>2027</option>
+                            <option value=2028>2028</option>
+                            <option value=2029>2029</option>
+                            <option value=2030>2030</option>
+                        </select></form>
+                    </div>
+                	
+                </div>
+              
+            	
+            	
+            </div>
+            
+            <h3 class="tit">영화선택<strong>>30분전에 예매/취소 가능</strong></h3>
+            <div class="box4">
+            	<p>영화와 시간대를 선택하여 주세요.</p>
+                <div class="shown">
+                	<h3>2D/4관</h3>
+                    <button>13:45</button>
+                    <button>18:45</button>
+                </div>
+            </div>
+    	</div><!--wrap END-->
+       
+    </section>
+    
+ 	<footer>
+    	<div class="wrap">
+        	<div class="b_logo">
+            	<a href="../index.html"><img src="../03_ticket/img/25.png"></a>
+            </div>
+            <ul class="b_gnb">
+            	<li><a href="#">이용약관</a></li>
+                <li><a href="#">제휴문의</a></li>
+                <li><a href="#">고객문의</a></li>
+                <li><a href="#">사이트맵</a></li>
+                <li><a href="#">개인정보 취급방침</a></li>
+            </ul>
+            <div class="b_left">
+            	<p>서울시  종로구 신문로 1가 226<br>
+				흥국생명 빌딩 지하 2층<br>
+				씨네큐브 광화문</p>
+            </div>
+
+            
+            <div class="b_right">
+            <p>cineclub은 문화 컨텐츠 선두주자<br> 
+			   tcast가 운영하고 <br>
+			   흥국금융가족이 cineclub의 운영을 <br>
+			   지원하고 있습니다</p>
+            </div>
+        </div>
+    </footer>
+    <!--<button name="jump" onclick="jump()">Go</button>-->
+<script src="scripts.js"></script>
+<!-- Optional JavaScript for bootstrap -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+        integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+        integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+        crossorigin="anonymous"></script>
+        <!--custom js-->
+<script src="custom.js" type="text/javascript"></script>
+</body>
+</html>
